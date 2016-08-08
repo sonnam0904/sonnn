@@ -1,0 +1,57 @@
+{
+	"ImportPath": "sonnn",
+	"GoVersion": "go1.6",
+	"GodepVersion": "v74",
+	"Deps": [
+		{
+			"ImportPath": "github.com/astaxie/beego",
+			"Comment": "v1.6.1-6-gdb477f3",
+			"Rev": "db477f381a2aeaf8d8368765839632cebff15d00"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/config",
+			"Comment": "v1.6.1-6-gdb477f3",
+			"Rev": "db477f381a2aeaf8d8368765839632cebff15d00"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/context",
+			"Comment": "v1.6.1-6-gdb477f3",
+			"Rev": "db477f381a2aeaf8d8368765839632cebff15d00"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/grace",
+			"Comment": "v1.6.1-6-gdb477f3",
+			"Rev": "db477f381a2aeaf8d8368765839632cebff15d00"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/logs",
+			"Comment": "v1.6.1-6-gdb477f3",
+			"Rev": "db477f381a2aeaf8d8368765839632cebff15d00"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/orm",
+			"Comment": "v1.6.1-6-gdb477f3",
+			"Rev": "db477f381a2aeaf8d8368765839632cebff15d00"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/session",
+			"Comment": "v1.6.1-6-gdb477f3",
+			"Rev": "db477f381a2aeaf8d8368765839632cebff15d00"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/toolbox",
+			"Comment": "v1.6.1-6-gdb477f3",
+			"Rev": "db477f381a2aeaf8d8368765839632cebff15d00"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/utils",
+			"Comment": "v1.6.1-6-gdb477f3",
+			"Rev": "db477f381a2aeaf8d8368765839632cebff15d00"
+		},
+		{
+			"ImportPath": "github.com/go-sql-driver/mysql",
+			"Comment": "v1.2-198-g0b58b37",
+			"Rev": "0b58b37b664c21f3010e836f1b931e1d0b0b0685"
+		}
+	]
+}

@@ -8,21 +8,17 @@
 package routers
 
 import (
-	"sonnn/controllers"
-
 	"github.com/astaxie/beego"
+	"sonnn/controllers"
 )
 
 func init() {
+	beego.Router("/", &controllers.MainController{}, "get:Home")
+
 	ns := beego.NewNamespace("/v1",
-		beego.NSNamespace("/object",
+		beego.NSNamespace("/posts",
 			beego.NSInclude(
-				&controllers.ObjectController{},
-			),
-		),
-		beego.NSNamespace("/user",
-			beego.NSInclude(
-				&controllers.UserController{},
+				&controllers.PostController{},
 			),
 		),
 	)

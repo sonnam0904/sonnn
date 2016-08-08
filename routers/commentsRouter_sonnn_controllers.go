@@ -6,88 +6,46 @@ import (
 
 func init() {
 
-	beego.GlobalControllerRouter["sonnn/controllers:ObjectController"] = append(beego.GlobalControllerRouter["sonnn/controllers:ObjectController"],
+	beego.GlobalControllerRouter["sonnn/controllers:MainController"] = append(beego.GlobalControllerRouter["sonnn/controllers:MainController"],
 		beego.ControllerComments{
-			"Post",
+			"Home",
 			`/`,
-			[]string{"post"},
-			nil})
-
-	beego.GlobalControllerRouter["sonnn/controllers:ObjectController"] = append(beego.GlobalControllerRouter["sonnn/controllers:ObjectController"],
-		beego.ControllerComments{
-			"Get",
-			`/:objectId`,
 			[]string{"get"},
 			nil})
 
-	beego.GlobalControllerRouter["sonnn/controllers:ObjectController"] = append(beego.GlobalControllerRouter["sonnn/controllers:ObjectController"],
+	beego.GlobalControllerRouter["sonnn/controllers:PostController"] = append(beego.GlobalControllerRouter["sonnn/controllers:PostController"],
 		beego.ControllerComments{
 			"GetAll",
 			`/`,
 			[]string{"get"},
 			nil})
 
-	beego.GlobalControllerRouter["sonnn/controllers:ObjectController"] = append(beego.GlobalControllerRouter["sonnn/controllers:ObjectController"],
+	beego.GlobalControllerRouter["sonnn/controllers:PostController"] = append(beego.GlobalControllerRouter["sonnn/controllers:PostController"],
 		beego.ControllerComments{
-			"Put",
-			`/:objectId`,
-			[]string{"put"},
-			nil})
-
-	beego.GlobalControllerRouter["sonnn/controllers:ObjectController"] = append(beego.GlobalControllerRouter["sonnn/controllers:ObjectController"],
-		beego.ControllerComments{
-			"Delete",
-			`/:objectId`,
-			[]string{"delete"},
-			nil})
-
-	beego.GlobalControllerRouter["sonnn/controllers:UserController"] = append(beego.GlobalControllerRouter["sonnn/controllers:UserController"],
-		beego.ControllerComments{
-			"Post",
+			"Create",
 			`/`,
 			[]string{"post"},
 			nil})
 
-	beego.GlobalControllerRouter["sonnn/controllers:UserController"] = append(beego.GlobalControllerRouter["sonnn/controllers:UserController"],
+	beego.GlobalControllerRouter["sonnn/controllers:PostController"] = append(beego.GlobalControllerRouter["sonnn/controllers:PostController"],
 		beego.ControllerComments{
-			"GetAll",
-			`/`,
+			"GetOne",
+			`/:id`,
 			[]string{"get"},
 			nil})
 
-	beego.GlobalControllerRouter["sonnn/controllers:UserController"] = append(beego.GlobalControllerRouter["sonnn/controllers:UserController"],
+	beego.GlobalControllerRouter["sonnn/controllers:PostController"] = append(beego.GlobalControllerRouter["sonnn/controllers:PostController"],
 		beego.ControllerComments{
-			"Get",
-			`/:uid`,
-			[]string{"get"},
-			nil})
-
-	beego.GlobalControllerRouter["sonnn/controllers:UserController"] = append(beego.GlobalControllerRouter["sonnn/controllers:UserController"],
-		beego.ControllerComments{
-			"Put",
-			`/:uid`,
+			"Update",
+			`/:id`,
 			[]string{"put"},
 			nil})
 
-	beego.GlobalControllerRouter["sonnn/controllers:UserController"] = append(beego.GlobalControllerRouter["sonnn/controllers:UserController"],
+	beego.GlobalControllerRouter["sonnn/controllers:PostController"] = append(beego.GlobalControllerRouter["sonnn/controllers:PostController"],
 		beego.ControllerComments{
 			"Delete",
-			`/:uid`,
+			`/:id`,
 			[]string{"delete"},
-			nil})
-
-	beego.GlobalControllerRouter["sonnn/controllers:UserController"] = append(beego.GlobalControllerRouter["sonnn/controllers:UserController"],
-		beego.ControllerComments{
-			"Login",
-			`/login`,
-			[]string{"get"},
-			nil})
-
-	beego.GlobalControllerRouter["sonnn/controllers:UserController"] = append(beego.GlobalControllerRouter["sonnn/controllers:UserController"],
-		beego.ControllerComments{
-			"Logout",
-			`/logout`,
-			[]string{"get"},
 			nil})
 
 }
